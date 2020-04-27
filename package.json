@@ -1,0 +1,21 @@
+{
+    "name": "ohmyfood",
+    "version": "1.0.0",
+    "description": "Openclassrooms parcours Developpeur web projet 3",
+    "main": "index.html",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+        "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MathildeDescamps/OpenClassromms_P3.git"
+    },
+    "author": "Mathilde Descamps",
+    "license": "ISC",
+    "browserslist": "last 4 versions",
+    "bugs": {
+        "url": "https://github.com/MathildeDescamps/OpenClassromms_P3.git/issues"
+    },
+    "homepage": ""
+}

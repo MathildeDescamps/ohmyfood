@@ -1,0 +1,10 @@
+.header {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: $color-primary;
+    &_logo {
+        width: 20%;
+    }
+}

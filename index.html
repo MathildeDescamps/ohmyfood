@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ohmyfood est un site qui répertorie les menus des plus grands restaurants new-yorkais.">
+    <meta name="keywords" content="Restaurants, Menus, , Réservation, New-York">
+    <meta name="author" content="Mathilde Descamps">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./public/css/style.css">
@@ -12,32 +15,32 @@
 
 <body>
     <header class="header">
-        <img class="header_logo" src="./public/img/logo.png" alt="Logo ohmyfood" />
+        <img class="header__logo" src="./public/img/logo.png" alt="Logo ohmyfood" />
     </header>
     <section class="menus">
-        <section class="menus_l1">
-            <article class="menus_prev">
-                <img class="menus_prev_img" src="./public/img/menu-1b.png" alt="Menu La note enchantée" />
-            </article>
-            <article class="menus_prev">
-                <img class="menus_prev_img" src="./public/img/menu-2b.png" alt="Menu La chic à la francaise" />
-            </article>
-        </section>
-        <section class="menus_l2">
-            <article class="menus_prev">
-                <img class="menus_prev_img" src="./public/img/menu-3b.png" alt="Menu Le délice des papilles" />
-            </article>
-            <article class="menus_prev">
-                <img class="menus_prev_img" src="./public/img/menu-4b.png" alt="Menu La palette du gout" />
-            </article>
-        </section>
+        <article class="menus__prev">
+            <a href="./menu1.html"><img class="menus__prev__img" src="./public/img/menu-1b.png" alt="Menu La note enchantée" /></a>
+        </article>
+        <article class="menus__prev">
+            <a href="./menu2.html"><img class="menus__prev__img" src="./public/img/menu-2b.png" alt="Menu La chic à la francaise" /></a>
+        </article>
+        <article class="menus__prev">
+            <a href="./menu3.html"><img class="menus__prev__img l2" src="./public/img/menu-3b.png" alt="Menu Le délice des papilles" /></a>
+        </article>
+        <article class="menus__prev">
+            <a href="./menu4.html"><img class="menus__prev__img l2" src="./public/img/menu-4b.png" alt="Menu La palette du gout" /></a>
+        </article>
     </section>
-    <aside class="button">
-        <p class="button_content">Prochaînement</p>
-    </aside>
+    <section class="button">
+        <p class="button__content">Prochainement</p>
+    </section>
     <footer class="footer">
-        <p class="footer_left">Mentions légales</p>
-        <p class="footer_right">Contactez-nous</p>
+        <a href="./mentions-legales.html">
+            <p class="footer__left">Mentions légales</p>
+        </a>
+        <a href="mailto:contact@ohmyfood.com">
+            <p class="footer__right">Contactez-nous</p>
+        </a>
     </footer>
 </body>
 

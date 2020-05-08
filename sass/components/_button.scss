@@ -1,6 +1,16 @@
-.button_content {
-    font-size: 25px;
-    margin: 10px 10px 10px 10px;
-    display: block;
+.button {
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px;
+    width: 300px;
+    border-radius: 20px;
     background-color: $color-primary;
+}
+
+.button__content {
+    font-size: 25px;
+    padding: 15px 10px 15px 10px;
+    display: block;
 }

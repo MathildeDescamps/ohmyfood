@@ -1,13 +1,22 @@
-.menus_l1,
-.menus_l2 {
+.menus {
+    width: 850px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    border: solid black 1px;
-    width: 900px;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
-.menus_prev_img {
+.menus__prev__img {
     width: 400px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.274);
+    &:hover {
+        transform: scale(1);
+        animation: zoom 300ms forwards cubic-bezier(.72, -0.06, .39, 1.06);
+    }
+}
+
+.l2 {
+    margin-top: 50px;
 }

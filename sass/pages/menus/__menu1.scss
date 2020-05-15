@@ -1,0 +1,46 @@
+$underline: all 0.2s ease-in-out;
+.menu1 {
+    font-family: 'TYPO-COMICS-Light-DEMO';
+    &__header {
+        & h2 {
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+    }
+    @include all-menus;
+    background-color: $menu1bg;
+    color: $menu1color;
+    & i {
+        color: $music-note;
+    }
+    &__bloc {
+        @include all-blocs;
+        & .bloc__header {
+            & .decorated {
+                overflow: hidden;
+                text-align: center;
+                &>span {
+                    &.lines {
+                        position: relative;
+                        display: inline-block;
+                        &::before {
+                            @include before-after;
+                            right: 100%;
+                        }
+                        &::after {
+                            @include before-after;
+                            left: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        @include centered;
+        padding-bottom: 80px;
+        width: 230px;
+    }
+}

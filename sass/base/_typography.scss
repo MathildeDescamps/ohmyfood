@@ -1,12 +1,45 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: $color-secondary;
 }
 
-h1 {
-    color: $color-tertiary;
+@font-face {
+    font-family: 'TYPO-COMICS-Light-DEMO';
+    src: url('../../public/fonts/webfonts_TYPO-COMICS-Light-DEMO/TYPO-COMICS-Light-DEMO.ttf.eot') format('eot'), url('../../public/fonts/webfonts_TYPO-COMICS-Light-DEMO/TYPO-COMICS-Light-DEMO.ttf.woff') format('woff'), url('../../public/fonts/webfonts_TYPO-COMICS-Light-DEMO/TYPO-COMICS-Light-DEMO.ttf.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-a {
-    text-decoration: none;
+@font-face {
+    font-family: 'Croissant-One';
+    src: url('../../public/fonts/Croissant-One/croissantone/CroissantOne-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dancing-Script-Regular';
+    src: url('../../public/fonts/Dancing-Script-Regular/dancingscript/DancingScript-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Faux-Omniglot';
+    src: url('../../public/fonts/Faux-Omniglot/FauxOmniglot.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KaushanScript-Regular';
+    src: url('../../public/fonts/KaushanScript-Regular/kaushanscript/KaushanScript-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'It-is-Definitely-Possible';
+    src: url('../../public/fonts/It-is-Definitely-Possible/iidp.otf') format('otf'), url('../../public/fonts/It-is-Definitely-Possible/iidp.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }

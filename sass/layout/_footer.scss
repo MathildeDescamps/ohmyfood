@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: $color-primary;
+    color: $color-secondary;
     font-size: 20px;
     position: fixed;
     bottom: 0;
@@ -11,5 +12,13 @@
     }
     &__right {
         padding-right: 20px;
+    }
+    & a {
+        color: $color-secondary;
+        text-decoration: none;
+        font-weight: normal;
+    }
+    p:hover {
+        animation: wiggle 300ms ease-in-out;
     }
 }

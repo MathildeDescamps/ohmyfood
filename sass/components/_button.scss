@@ -7,10 +7,42 @@
     width: 300px;
     border-radius: 20px;
     background-color: $color-primary;
-}
-
-.button__content {
-    font-size: 25px;
-    padding: 15px 10px 15px 10px;
-    display: block;
+    color: $color-secondary;
+    &__content {
+        font-size: 25px;
+        padding: 15px 10px 0px 10px;
+        display: block;
+    }
+    .points {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50px;
+        position: relative;
+        top: -15px;
+        margin-left: auto;
+        margin-right: auto;
+        &__element {
+            opacity: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $color-secondary;
+            margin-left: 2px;
+            margin-right: 2px;
+            &--1 {
+                animation: points 1000ms forwards infinite ease;
+                animation-direction: alternate;
+            }
+            &--2 {
+                animation: points 1000ms forwards infinite ease;
+                animation-delay: 400ms;
+                animation-direction: alternate;
+            }
+            &--3 {
+                animation: points 1000ms forwards infinite ease;
+                animation-delay: 800ms;
+                animation-direction: alternate;
+            }
+        }
+    }
 }

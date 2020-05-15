@@ -1,0 +1,55 @@
+.menu2 {
+    &__header {
+        & h2 {
+            margin-top: 60px;
+            margin-bottom: 100px;
+            font-family: 'Croissant-One';
+        }
+        & span {
+            &.p1 {
+                color: $menu2color1;
+            }
+            &.p2 {
+                color: $menu2color2;
+            }
+            &.p3 {
+                color: $menu2color3;
+            }
+        }
+    }
+    @include all-menus;
+    background-color: $menu2bg;
+    &__bloc {
+        &1 {
+            color: $menu2color1;
+            @include all-blocs;
+        }
+        &2 {
+            color: $menu2color2;
+            @include all-blocs;
+        }
+        &3 {
+            color: $menu2color3;
+            @include all-blocs;
+            padding-bottom: 100px;
+        }
+        & .bloc__header {
+            & .decorated {
+                overflow: hidden;
+                text-align: center;
+                &>span {
+                    position: relative;
+                    display: inline-block;
+                    &:before {
+                        @include before-after;
+                        right: 100%;
+                    }
+                    &:after {
+                        @include before-after;
+                        left: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

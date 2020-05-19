@@ -16,6 +16,15 @@
                 width: 1000px;
             }
             
+            @mixin all-menus-responsive {
+                @include centered;
+                margin-top: 50px;
+                margin-bottom: 100px;
+                padding-top: 40px;
+                @include box-shadow;
+                width: 300px;
+            }
+            
             @mixin before-after {
                 content: '';
                 position: absolute;
@@ -29,6 +38,23 @@
                 @include centered;
                 margin-bottom: 60px;
                 width: 800px;
+                & .bloc__content {
+                    display: flex;
+                    justify-content: space-between;
+                    &--d {
+                        text-align: left;
+                    }
+                    &--p {
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            @mixin all-blocs-responsive {
+                @include centered;
+                margin-bottom: 30px;
+                width: 200px;
                 & .bloc__content {
                     display: flex;
                     justify-content: space-between;

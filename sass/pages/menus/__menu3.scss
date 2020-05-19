@@ -21,50 +21,114 @@
     font-family: XiaoGao;
     background-color: $menu3bg;
     &__bloc {
-        @include all-blocs;
-        color: black;
-    }
-    & .bloc__header {
-        & .decorated {
-            overflow: hidden;
-            text-align: center;
-            &>span {
-                position: relative;
-                display: inline-block;
-                &.p1 {
-                    &:before {
-                        @include before-after;
-                        right: 100%;
-                        color: $menu3color1;
+        &1 {
+            color: black;
+            @include all-blocs;
+            & .bloc__header {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 14px;
+                & .lines {
+                    width: 250px;
+                    height: 5px;
+                    background-color: $menu3color1;
+                    position: relative;
+                    top: 25px;
+                }
+                & .underlined {
+                    display: inline-block;
+                    position: relative;
+                    width: 300px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $menu3color1;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
                     }
-                    &:after {
-                        @include before-after;
-                        left: 100%;
-                        color: $menu3color1;
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
                     }
                 }
-                &.p2 {
-                    &:before {
-                        @include before-after;
-                        right: 100%;
-                        color: $menu3color2;
+            }
+        }
+        &2 {
+            color: black;
+            @include all-blocs;
+            & .bloc__header {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 14px;
+                & .lines {
+                    width: 250px;
+                    height: 5px;
+                    background-color: $menu3color2;
+                    position: relative;
+                    top: 25px;
+                }
+                & .underlined {
+                    display: inline-block;
+                    position: relative;
+                    width: 300px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $menu3color2;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
                     }
-                    &:after {
-                        @include before-after;
-                        left: 100%;
-                        color: $menu3color2;
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
                     }
                 }
-                &.p3 {
-                    &:before {
-                        @include before-after;
-                        right: 100%;
-                        color: $menu3color3;
+            }
+        }
+        &3 {
+            color: black;
+            @include all-blocs;
+            padding-bottom: 100px;
+            & .bloc__header {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 14px;
+                & .lines {
+                    width: 250px;
+                    height: 5px;
+                    background-color: $menu3color3;
+                    position: relative;
+                    top: 25px;
+                }
+                & .underlined {
+                    display: inline-block;
+                    position: relative;
+                    width: 300px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $menu3color3;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
                     }
-                    &:after {
-                        @include before-after;
-                        left: 100%;
-                        color: $menu3color3;
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
                     }
                 }
             }

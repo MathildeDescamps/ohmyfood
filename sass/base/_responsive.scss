@@ -1,0 +1,63 @@
+@media all and (max-width: 1000px) {
+    .header {
+        padding-top: 15px;
+        &__logo {
+            width: 40%;
+        }
+    }
+    .content {
+        &>h1 {
+            margin-top: 40px;
+        }
+    }
+    .menus {
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        &__prev__img {
+            width: 300px;
+            margin-bottom: 30px;
+        }
+        & .l2 {
+            margin-top: 0;
+        }
+    }
+    .menu {
+        &1 {
+            width: 300px;
+            @include all-menus-responsive;
+            & .resp {
+                color: $music-note;
+                display: block;
+            }
+            & .normal {
+                display: none;
+            }
+            &__bloc {
+                @include all-blocs-responsive;
+            }
+            &__footer {
+                padding-bottom: 40px;
+                & i {
+                    position: relative;
+                    top: 15px;
+                    left: 10px;
+                }
+            }
+        }
+    }
+    .footer {
+        font-size: 15px;
+    }
+    .button {
+        width: 220px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        &__content {
+            font-size: 20px;
+            padding: 15px 5px 5px 5px;
+        }
+    }
+}

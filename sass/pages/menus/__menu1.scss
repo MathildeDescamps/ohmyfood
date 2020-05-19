@@ -13,25 +13,40 @@ $underline: all 0.2s ease-in-out;
     & i {
         color: $music-note;
     }
+    & .resp {
+        display: none;
+    }
     &__bloc {
         @include all-blocs;
         & .bloc__header {
-            & .decorated {
-                overflow: hidden;
-                text-align: center;
-                &>span {
-                    &.lines {
-                        position: relative;
-                        display: inline-block;
-                        &::before {
-                            @include before-after;
-                            right: 100%;
-                        }
-                        &::after {
-                            @include before-after;
-                            left: 100%;
-                        }
-                    }
+            display: flex;
+            justify-content: space-evenly;
+            & .lines {
+                width: 300px;
+                height: 5px;
+                background-color: $menu1color;
+                position: relative;
+                top: 30px;
+            }
+            & .underlined {
+                display: inline-block;
+                position: relative;
+                width: 200px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $menu1color;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+                &:hover::before {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
                 }
             }
         }

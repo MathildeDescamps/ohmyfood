@@ -224,7 +224,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu1__bloc .bloc__content {
+.menu1__bloc .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -307,7 +307,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu2__bloc1 .bloc__content {
+.menu2__bloc1 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -358,7 +358,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu2__bloc2 .bloc__content {
+.menu2__bloc2 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -410,7 +410,7 @@ body {
   width: 800px;
   padding-bottom: 100px;
 }
-.menu2__bloc3 .bloc__content {
+.menu2__bloc3 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -487,7 +487,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu3__bloc1 .bloc__content {
+.menu3__bloc1 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -538,7 +538,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu3__bloc2 .bloc__content {
+.menu3__bloc2 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -590,7 +590,7 @@ body {
   width: 800px;
   padding-bottom: 100px;
 }
-.menu3__bloc3 .bloc__content {
+.menu3__bloc3 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -667,7 +667,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu4__bloc1 .bloc__content {
+.menu4__bloc1 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -718,7 +718,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu4__bloc2 .bloc__content {
+.menu4__bloc2 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -769,7 +769,7 @@ body {
   margin-bottom: 60px;
   width: 800px;
 }
-.menu4__bloc3 .bloc__content {
+.menu4__bloc3 .bloc__content--dp {
   display: flex;
   justify-content: space-between;
 }
@@ -845,10 +845,11 @@ body {
 
 @media all and (max-width: 1000px) {
   .header {
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .header__logo {
-    width: 40%;
+    width: 50%;
   }
 
   .content > h1 {
@@ -856,13 +857,13 @@ body {
   }
 
   .menus {
-    width: 300px;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
   }
   .menus__prev__img {
-    width: 300px;
+    width: 100%;
     margin-bottom: 30px;
   }
   .menus .l2 {
@@ -877,7 +878,10 @@ body {
     margin-bottom: 100px;
     padding-top: 40px;
     box-shadow: 0px 0px 10px 1px #00000046;
-    width: 300px;
+    width: 80%;
+  }
+  .menu1__header h2 {
+    margin-bottom: 30px;
   }
   .menu1 .resp {
     color: #F6916A;
@@ -889,27 +893,172 @@ body {
   .menu1__bloc {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    width: 200px;
+    width: 80%;
+    margin-bottom: 10px;
   }
-  .menu1__bloc .bloc__content {
+  .menu1__bloc .bloc__content--dp {
     display: flex;
     justify-content: space-between;
   }
   .menu1__bloc .bloc__content--d {
     text-align: left;
+    margin-right: 10px;
   }
   .menu1__bloc .bloc__content--p {
     text-align: right;
     font-weight: bold;
+    position: relative;
+    top: 15px;
+  }
+  .menu1 .bloc__header h3 {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .menu1 .bloc__header .lines {
+    top: 25px;
+    height: 2px;
+    width: 55px;
   }
   .menu1__footer {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .menu1__footer i {
     position: relative;
     top: 15px;
-    left: 10px;
+    left: 15px;
+  }
+  .menu2 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px 1px #00000046;
+    width: 80%;
+  }
+  .menu2__header h2 {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .menu2__bloc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .menu2__bloc .bloc__content--dp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu2__bloc .bloc__content--d {
+    text-align: left;
+    margin-right: 10px;
+  }
+  .menu2__bloc .bloc__content--p {
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+  }
+  .menu2 .bloc__header h3 {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .menu2 .bloc__header .lines {
+    top: 25px;
+    height: 2px;
+    width: 55px;
+  }
+  .menu3 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px 1px #00000046;
+    width: 80%;
+  }
+  .menu3__header h2 {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .menu3__bloc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .menu3__bloc .bloc__content--dp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu3__bloc .bloc__content--d {
+    text-align: left;
+    margin-right: 10px;
+  }
+  .menu3__bloc .bloc__content--p {
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+  }
+  .menu3 .bloc__header h3 {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .menu3 .bloc__header .lines {
+    top: 25px;
+    height: 2px;
+    width: 55px;
+  }
+  .menu4 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px 1px #00000046;
+    width: 80%;
+  }
+  .menu4__header h2 {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .menu4__bloc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .menu4__bloc .bloc__content--dp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu4__bloc .bloc__content--d {
+    text-align: left;
+    margin-right: 10px;
+  }
+  .menu4__bloc .bloc__content--p {
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+  }
+  .menu4 .bloc__header h3 {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .menu4 .bloc__header .lines {
+    top: 25px;
+    height: 2px;
+    width: 55px;
   }
 
   .footer {

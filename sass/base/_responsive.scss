@@ -1,8 +1,9 @@
 @media all and (max-width: 1000px) {
     .header {
-        padding-top: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         &__logo {
-            width: 40%;
+            width: 50%;
         }
     }
     .content {
@@ -11,12 +12,12 @@
         }
     }
     .menus {
-        width: 300px;
+        width: 80%;
         flex-direction: column;
         justify-content: center;
         margin-top: 50px;
         &__prev__img {
-            width: 300px;
+            width: 100%;
             margin-bottom: 30px;
         }
         & .l2 {
@@ -27,6 +28,9 @@
         &1 {
             width: 300px;
             @include all-menus-responsive;
+            &__header h2 {
+                margin-bottom: 30px;
+            }
             & .resp {
                 color: $music-note;
                 display: block;
@@ -37,12 +41,93 @@
             &__bloc {
                 @include all-blocs-responsive;
             }
+            & .bloc__header {
+                & h3 {
+                    font-size: 15px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                & .lines {
+                    top: 25px;
+                    height: 2px;
+                    width: 55px;
+                }
+            }
             &__footer {
-                padding-bottom: 40px;
+                padding-bottom: 20px;
                 & i {
                     position: relative;
                     top: 15px;
-                    left: 10px;
+                    left: 15px;
+                }
+            }
+        }
+        &2 {
+            width: 300px;
+            @include all-menus-responsive;
+            &__header h2 {
+                margin-bottom: 30px;
+                margin-top: 0;
+            }
+            &__bloc {
+                @include all-blocs-responsive;
+            }
+            & .bloc__header {
+                & h3 {
+                    font-size: 15px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                & .lines {
+                    top: 25px;
+                    height: 2px;
+                    width: 55px;
+                }
+            }
+        }
+        &3 {
+            width: 300px;
+            @include all-menus-responsive;
+            &__header h2 {
+                margin-bottom: 30px;
+                margin-top: 0;
+            }
+            &__bloc {
+                @include all-blocs-responsive;
+            }
+            & .bloc__header {
+                & h3 {
+                    font-size: 15px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                & .lines {
+                    top: 25px;
+                    height: 2px;
+                    width: 55px;
+                }
+            }
+        }
+        &4 {
+            width: 300px;
+            @include all-menus-responsive;
+            &__header h2 {
+                margin-bottom: 30px;
+                margin-top: 0;
+            }
+            &__bloc {
+                @include all-blocs-responsive;
+            }
+            & .bloc__header {
+                & h3 {
+                    font-size: 15px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                & .lines {
+                    top: 25px;
+                    height: 2px;
+                    width: 55px;
                 }
             }
         }

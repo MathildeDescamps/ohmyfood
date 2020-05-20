@@ -22,7 +22,7 @@
                 margin-bottom: 100px;
                 padding-top: 40px;
                 @include box-shadow;
-                width: 300px;
+                width: 80%;
             }
             
             @mixin before-after {
@@ -39,8 +39,10 @@
                 margin-bottom: 60px;
                 width: 800px;
                 & .bloc__content {
-                    display: flex;
-                    justify-content: space-between;
+                    &--dp {
+                        display: flex;
+                        justify-content: space-between;
+                    }
                     &--d {
                         text-align: left;
                     }
@@ -53,17 +55,22 @@
             
             @mixin all-blocs-responsive {
                 @include centered;
-                margin-bottom: 30px;
-                width: 200px;
+                width: 80%;
+                margin-bottom: 10px;
                 & .bloc__content {
-                    display: flex;
-                    justify-content: space-between;
+                    &--dp {
+                        display: flex;
+                        justify-content: space-between;
+                    }
                     &--d {
                         text-align: left;
+                        margin-right: 10px;
                     }
                     &--p {
                         text-align: right;
                         font-weight: bold;
+                        position: relative;
+                        top: 15px;
                     }
                 }
             }

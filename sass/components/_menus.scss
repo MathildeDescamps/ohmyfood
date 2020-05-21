@@ -1,19 +1,111 @@
     .menus {
-        width: 850px;
+        width: 900px;
         margin-top: 80px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        & a {
+            text-decoration: none;
+        }
     }
     
-    .menus__prev__img {
+    .menu__prev {
         width: 400px;
+        height: 500px;
         box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.274);
+        text-align: center;
         &:hover {
             transform: scale(1);
             animation: zoom 300ms forwards ease;
+        }
+        &1 {
+            background-color: $menu1bg;
+            color: $menu1color;
+            position: relative;
+            top: 20px;
+            & h2 {
+                font-family: 'Brush Script MT', Georgia, 'Times New Roman', Times, serif;
+                font-size: 40px;
+                margin-top: 5px;
+            }
+            & h3 {
+                font-family: 'TYPO-COMICS-Light-DEMO', 'Bradley Hand', Didot, Georgia, 'Times New Roman', Times, serif;
+                font-size: 40px;
+            }
+            & i {
+                color: $music-note;
+                padding-top: 130px;
+            }
+        }
+        &2 {
+            background-color: $menu2bg;
+            color: $menu2color1;
+            margin-left: 40px;
+            & h2 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 25px;
+                padding-top: 180px;
+                & .p1 {
+                    color: $menu2color1;
+                }
+                & .p2 {
+                    color: $menu2color2;
+                }
+                & .p3 {
+                    color: $menu2color3;
+                }
+            }
+            & h3 {
+                font-family: Didot, Georgia, 'Times New Roman', Times, serif;
+                font-size: 40px;
+            }
+        }
+        &3 {
+            background-color: $menu3bg;
+            color: $menu3color3;
+            & h2 {
+                font-family: 'Dancing Script', Georgia, 'Times New Roman', Times, serif;
+                font-size: 35px;
+                padding-top: 180px;
+                & .p1 {
+                    color: $menu3color1;
+                }
+                & .p2 {
+                    color: $menu3color2;
+                }
+                & .p3 {
+                    color: $menu3color3;
+                }
+            }
+            & h3 {
+                font-family: 'Bradley Hand', Didot, Georgia, 'Times New Roman', Times, serif;
+                font-size: 50px;
+            }
+        }
+        &4 {
+            background-color: $menu4bg;
+            color: $menu4color1;
+            margin-left: 40px;
+            & h2 {
+                font-family: 'Kaushan Script', Georgia, 'Times New Roman', Times, serif;
+                font-size: 30px;
+                padding-top: 180px;
+                & .p1 {
+                    color: $menu4color1;
+                }
+                & .p2 {
+                    color: $menu4color2;
+                }
+                & .p3 {
+                    color: $menu4color3;
+                }
+            }
+            & h3 {
+                font-family: 'Bradley Hand', Didot, Georgia, 'Times New Roman', Times, serif;
+                font-size: 50px;
+            }
         }
     }
     

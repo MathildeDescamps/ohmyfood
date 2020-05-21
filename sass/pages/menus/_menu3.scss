@@ -1,25 +1,26 @@
-.menu4 {
+.menu3 {
     padding-bottom: 100px;
+    font-size: 18px;
     &__header {
         & h2 {
             margin-top: 60px;
             margin-bottom: 100px;
+            font-size: 55px;
         }
         & span {
             &.p1 {
-                color: $menu4color1;
+                color: $menu3color1;
             }
             &.p2 {
-                color: $menu4color2;
+                color: $menu3color2;
             }
             &.p3 {
-                color: $menu4color3;
+                color: $menu3color3;
             }
         }
     }
     @include all-menus;
-    font-family: XiaoGao;
-    background-color: $menu4bg;
+    background-color: $menu3bg;
     &__bloc {
         &1 {
             color: black;
@@ -27,18 +28,18 @@
             & .bloc__header {
                 display: flex;
                 justify-content: space-evenly;
-                font-size: 14px;
+                font-size: 20px;
                 & .lines {
-                    width: 250px;
+                    width: 50%;
                     height: 5px;
-                    background-color: $menu4color1;
+                    background-color: $menu3color1;
                     position: relative;
-                    top: 25px;
+                    top: 35px;
                 }
                 & .underlined {
                     display: inline-block;
                     position: relative;
-                    width: 300px;
+                    width: 350px;
                     &::before {
                         content: '';
                         position: absolute;
@@ -47,7 +48,7 @@
                         height: 2px;
                         bottom: 0;
                         left: 0;
-                        background-color: $menu4color1;
+                        background-color: $menu3color1;
                         transform-origin: bottom right;
                         transition: transform 0.25s ease-out;
                     }
@@ -64,18 +65,18 @@
             & .bloc__header {
                 display: flex;
                 justify-content: space-evenly;
-                font-size: 14px;
+                font-size: 20px;
                 & .lines {
-                    width: 250px;
+                    width: 50%;
                     height: 5px;
-                    background-color: $menu4color2;
+                    background-color: $menu3color2;
                     position: relative;
-                    top: 25px;
+                    top: 35px;
                 }
                 & .underlined {
                     display: inline-block;
                     position: relative;
-                    width: 300px;
+                    width: 330px;
                     &::before {
                         content: '';
                         position: absolute;
@@ -84,7 +85,7 @@
                         height: 2px;
                         bottom: 0;
                         left: 0;
-                        background-color: $menu4color2;
+                        background-color: $menu3color2;
                         transform-origin: bottom right;
                         transition: transform 0.25s ease-out;
                     }
@@ -101,18 +102,18 @@
             & .bloc__header {
                 display: flex;
                 justify-content: space-evenly;
-                font-size: 14px;
+                font-size: 20px;
                 & .lines {
-                    width: 250px;
+                    width: 50%;
                     height: 5px;
-                    background-color: $menu4color3;
+                    background-color: $menu3color3;
                     position: relative;
-                    top: 25px;
+                    top: 35px;
                 }
                 & .underlined {
                     display: inline-block;
                     position: relative;
-                    width: 300px;
+                    width: 330px;
                     &::before {
                         content: '';
                         position: absolute;
@@ -121,7 +122,7 @@
                         height: 2px;
                         bottom: 0;
                         left: 0;
-                        background-color: $menu4color3;
+                        background-color: $menu3color3;
                         transform-origin: bottom right;
                         transition: transform 0.25s ease-out;
                     }

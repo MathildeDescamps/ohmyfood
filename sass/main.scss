@@ -1,5 +1,4 @@
 @import "./utils/colors";
-@import "./utils/listes";
 @import "./utils/mixins";
 @import "./base/typography";
 @import "./utils/keyframes";
@@ -8,10 +7,10 @@
 @import "./layout/footer";
 @import "./components/menus";
 @import "./components/button";
+@import "./pages/menus/_common";
 @import "./pages/menus/_menu1";
 @import "./pages/menus/_menu2";
 @import "./pages/menus/_menu3";
 @import "./pages/menus/_menu4";
-@import "./pages/menus/_common";
-@import "./pages/_mentions-legales";
 @import "./base/_responsive";
+@import "./pages/mentions-legales";

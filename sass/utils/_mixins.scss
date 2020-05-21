@@ -13,7 +13,7 @@
                 margin-bottom: 150px;
                 padding-top: 40px;
                 @include box-shadow;
-                width: 1000px;
+                width: 70%;
             }
             
             @mixin all-menus-responsive {
@@ -23,6 +23,10 @@
                 padding-top: 40px;
                 @include box-shadow;
                 width: 80%;
+                &__header h2 {
+                    margin-bottom: -20px;
+                    margin-top: 0;
+                }
             }
             
             @mixin before-after {
@@ -30,14 +34,13 @@
                 position: absolute;
                 top: 50%;
                 border-bottom: 2px solid;
-                width: 592px;
                 margin: 0 20px;
             }
             
             @mixin all-blocs {
                 @include centered;
                 margin-bottom: 60px;
-                width: 800px;
+                width: 80%;
                 & .bloc__content {
                     &--dp {
                         display: flex;
@@ -71,6 +74,13 @@
                         font-weight: bold;
                         position: relative;
                         top: 15px;
+                    }
+                }
+                & .bloc__header {
+                    & .lines {
+                        top: 35px;
+                        height: 2px;
+                        width: 50%;
                     }
                 }
             }

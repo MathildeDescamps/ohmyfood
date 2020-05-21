@@ -8,8 +8,8 @@
     <meta name="author" content="Mathilde Descamps">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/fonts/" type="text/css" />
+    <link rel="stylesheet" href="./public/css/prefixed/style.css">
+    <script src="https://kit.fontawesome.com/eb66498996.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
 
@@ -18,18 +18,32 @@
         <img class="header__logo" src="./public/img/logo.png" alt="Logo ohmyfood" />
     </header>
     <section class="menus">
-        <article class="menus__prev">
-            <a href="./menu1.html"><img class="menus__prev__img" src="./public/img/menu-1b.png" alt="Menu La note enchantée" /></a>
-        </article>
-        <article class="menus__prev">
-            <a href="./menu2.html"><img class="menus__prev__img" src="./public/img/menu-2b.png" alt="Menu La chic à la francaise" /></a>
-        </article>
-        <article class="menus__prev">
-            <a href="./menu3.html"><img class="menus__prev__img l2" src="./public/img/menu-3b.png" alt="Menu Le délice des papilles" /></a>
-        </article>
-        <article class="menus__prev">
-            <a href="./menu4.html"><img class="menus__prev__img l2" src="./public/img/menu-4b.png" alt="Menu La palette du gout" /></a>
-        </article>
+        <h2>&nbsp;</h2>
+        <a href="./menu1.html">
+            <article class="menu__prev1 menu__prev">
+                <i class="fas fa-music fa-4x normal"></i>
+                <h2>La note enchantée</h2>
+                <h3>MENU</h3>
+            </article>
+        </a>
+        <a href="./menu2.html">
+            <article class="menu__prev2 menu__prev">
+                <h2><span class="p1">Le chic à </span><span class="p2">la </span><span class="p3">française</span></h2>
+                <h3>Menu</h3>
+            </article>
+        </a>
+        <a href="./menu3.html">
+            <article class="menu__prev3 menu__prev l2">
+                <h2><span class="p1">Le délice </span><span class="p2">des </span><span class="p3">papilles</span></h2>
+                <h3>Menu</h3>
+            </article>
+        </a>
+        <a href="./menu4.html">
+            <article class="menu__prev4 menu__prev l2">
+                <h2><span class="p1">La palet</span><span class="p2">te du </span><span class="p3">goût</span></h2>
+                <h3>Menu</h3>
+            </article>
+        </a>
     </section>
     <section class="button">
         <h2 class="button__content">Prochainement</h2>

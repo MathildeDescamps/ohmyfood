@@ -1,10 +1,10 @@
 $underline: all 0.2s ease-in-out;
 .menu1 {
-    font-family: 'TYPO-COMICS-Light-DEMO';
     &__header {
         & h2 {
             margin-top: 10px;
             margin-bottom: 60px;
+            font-size: 50px;
         }
     }
     @include all-menus;
@@ -13,7 +13,7 @@ $underline: all 0.2s ease-in-out;
     & i {
         color: $music-note;
     }
-    & .resp {
+    & .icone-resp {
         display: none;
     }
     &__bloc {
@@ -22,7 +22,7 @@ $underline: all 0.2s ease-in-out;
             display: flex;
             justify-content: space-evenly;
             & .lines {
-                width: 300px;
+                width: 50%;
                 height: 5px;
                 background-color: $menu1color;
                 position: relative;
@@ -57,5 +57,10 @@ $underline: all 0.2s ease-in-out;
         @include centered;
         padding-bottom: 80px;
         width: 230px;
+        font-size: 25px;
+        & i {
+            position: relative;
+            top: 20px;
+        }
     }
 }

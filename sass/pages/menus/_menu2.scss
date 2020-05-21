@@ -1,11 +1,12 @@
  .menu2 {
      @include all-menus;
      background-color: $menu2bg;
+     margin-top: 50px;
      &__header {
          & h2 {
-             margin-top: 60px;
+             margin-top: 10px;
              margin-bottom: 100px;
-             font-family: 'Croissant-One';
+             font-size: 30px;
          }
          & span {
              &.p1 {
@@ -28,7 +29,7 @@
                  justify-content: space-evenly;
                  font-size: 14px;
                  & .lines {
-                     width: 250px;
+                     width: 50%;
                      height: 5px;
                      background-color: $menu2color1;
                      position: relative;
@@ -37,7 +38,7 @@
                  & .underlined {
                      display: inline-block;
                      position: relative;
-                     width: 300px;
+                     width: 360px;
                      &::before {
                          content: '';
                          position: absolute;
@@ -65,7 +66,7 @@
                  justify-content: space-evenly;
                  font-size: 14px;
                  & .lines {
-                     width: 250px;
+                     width: 50%;
                      height: 5px;
                      background-color: $menu2color2;
                      position: relative;
@@ -74,7 +75,7 @@
                  & .underlined {
                      display: inline-block;
                      position: relative;
-                     width: 300px;
+                     width: 280px;
                      &::before {
                          content: '';
                          position: absolute;
@@ -103,7 +104,7 @@
                  justify-content: space-evenly;
                  font-size: 14px;
                  & .lines {
-                     width: 250px;
+                     width: 50%;
                      height: 5px;
                      background-color: $menu2color3;
                      position: relative;
@@ -112,7 +113,7 @@
                  & .underlined {
                      display: inline-block;
                      position: relative;
-                     width: 300px;
+                     width: 320px;
                      &::before {
                          content: '';
                          position: absolute;
